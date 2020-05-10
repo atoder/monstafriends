@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/monsta-friends/static/css/main.17886080.chunk.css",
-    "main.js": "/monsta-friends/static/js/main.fe4a9c21.chunk.js",
-    "main.js.map": "/monsta-friends/static/js/main.fe4a9c21.chunk.js.map",
-    "runtime-main.js": "/monsta-friends/static/js/runtime-main.82cd40b7.js",
-    "runtime-main.js.map": "/monsta-friends/static/js/runtime-main.82cd40b7.js.map",
-    "static/css/2.036b41f9.chunk.css": "/monsta-friends/static/css/2.036b41f9.chunk.css",
-    "static/js/2.4902a944.chunk.js": "/monsta-friends/static/js/2.4902a944.chunk.js",
-    "static/js/2.4902a944.chunk.js.map": "/monsta-friends/static/js/2.4902a944.chunk.js.map",
-    "index.html": "/monsta-friends/index.html",
-    "precache-manifest.4361cee926143c7d72eb0db6399b243a.js": "/monsta-friends/precache-manifest.4361cee926143c7d72eb0db6399b243a.js",
-    "service-worker.js": "/monsta-friends/service-worker.js",
-    "static/css/2.036b41f9.chunk.css.map": "/monsta-friends/static/css/2.036b41f9.chunk.css.map",
-    "static/css/main.17886080.chunk.css.map": "/monsta-friends/static/css/main.17886080.chunk.css.map",
-    "static/js/2.4902a944.chunk.js.LICENSE.txt": "/monsta-friends/static/js/2.4902a944.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/monsta-friends/static/media/EndElSan.3e948dd3.woff"
+    "main.css": "/monstafriends/static/css/main.17f0e2de.chunk.css",
+    "main.js": "/monstafriends/static/js/main.90f929d7.chunk.js",
+    "main.js.map": "/monstafriends/static/js/main.90f929d7.chunk.js.map",
+    "runtime-main.js": "/monstafriends/static/js/runtime-main.e788b392.js",
+    "runtime-main.js.map": "/monstafriends/static/js/runtime-main.e788b392.js.map",
+    "static/css/2.036b41f9.chunk.css": "/monstafriends/static/css/2.036b41f9.chunk.css",
+    "static/js/2.6fb3a735.chunk.js": "/monstafriends/static/js/2.6fb3a735.chunk.js",
+    "static/js/2.6fb3a735.chunk.js.map": "/monstafriends/static/js/2.6fb3a735.chunk.js.map",
+    "index.html": "/monstafriends/index.html",
+    "precache-manifest.3bc04364a94623c3c7489e632bda9c45.js": "/monstafriends/precache-manifest.3bc04364a94623c3c7489e632bda9c45.js",
+    "service-worker.js": "/monstafriends/service-worker.js",
+    "static/css/2.036b41f9.chunk.css.map": "/monstafriends/static/css/2.036b41f9.chunk.css.map",
+    "static/css/main.17f0e2de.chunk.css.map": "/monstafriends/static/css/main.17f0e2de.chunk.css.map",
+    "static/js/2.6fb3a735.chunk.js.LICENSE.txt": "/monstafriends/static/js/2.6fb3a735.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/monstafriends/static/media/EndElSan.3e948dd3.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.82cd40b7.js",
+    "static/js/runtime-main.e788b392.js",
     "static/css/2.036b41f9.chunk.css",
-    "static/js/2.4902a944.chunk.js",
-    "static/css/main.17886080.chunk.css",
-    "static/js/main.fe4a9c21.chunk.js"
+    "static/js/2.6fb3a735.chunk.js",
+    "static/css/main.17f0e2de.chunk.css",
+    "static/js/main.90f929d7.chunk.js"
   ]
 }
