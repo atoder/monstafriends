@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "End-El-San Logo El-San";
+  font-style: normal;
+  font-weight: normal;
+  src: local("End-El-San Logo El-San"), url("EndElSan.woff") format("woff");
+}
+
+h1 {
+  font-family: 'End-El-San Logo El-San';
+  font-weight: 200px;
+  color: #0ccac4;
+}
