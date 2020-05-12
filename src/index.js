@@ -8,9 +8,10 @@ import { searchFriends } from "./reducers";
 import { Provider } from "react-redux";
 import { applyMiddleware, createStore } from "redux";
 import { createLogger } from "redux-logger";
+import thunkMiddleware from 'redux-thunk';
 
 const logger = createLogger();
-const store = createStore(searchFriends, applyMiddleware(logger));
+const store = createStore(searchFriends, applyMiddleware(thunkMiddleware, logger));
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
