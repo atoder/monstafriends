@@ -5,35 +5,32 @@ import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
 import ErrorBoundry from "../components/ErrorBoundry";
 import "./App.css";
-import { setSearchField } from "../actions";
+import { setSearchField, requestMonsters } from "../actions";
 
 const mapStateToProps = (state) => {
   return {
-    searchField: state.searchField,
+    searchField: state.searchFriends.searchField,
+    friends: state.requestMonsters.friends,
+    pending: state.requestMonsters.isPending,
+    error: state.requestMonsters.error
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
     onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+    onRequestMonsters: () => dispatch(requestMonsters()),
   };
 };
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = { friends: [] };
-  }
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((users) => this.setState({ friends: users }));
+    this.props.onRequestMonsters();
   }
 
   render() {
-    const { friends } = this.state;
-    const { searchField, onSearchChange } = this.props;
+    const { searchField, onSearchChange, friends, isPending } = this.props;
     const filteredFriends = friends.filter((friend) => {
       return friend.name.toLowerCase().includes(searchField.toLowerCase());
     });

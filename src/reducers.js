@@ -22,7 +22,7 @@ export const searchFriends = (state = initialStateSearch, action = {}) => {
 
 const initialStateMonsters = {
   isPending: false,
-  monsters: [],
+  friends: [],
   error: ''
 }
 export const requestMonsters = (state = initialStateMonsters, action = {}) => {
