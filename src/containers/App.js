@@ -10,9 +10,9 @@ import { setSearchField, requestMonsters } from "../actions";
 const mapStateToProps = (state) => {
   return {
     searchField: state.searchFriends.searchField,
-    friends: state.requestMonsters.friends,
+    monsters: state.requestMonsters.monsters,
     pending: state.requestMonsters.isPending,
-    error: state.requestMonsters.error
+    error: state.requestMonsters.error,
   };
 };
 
@@ -24,32 +24,29 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 class App extends Component {
-
   componentDidMount() {
     this.props.onRequestMonsters();
   }
 
   render() {
-    const { searchField, onSearchChange, friends, isPending } = this.props;
-    const filteredFriends = friends.filter((friend) => {
-      return friend.name.toLowerCase().includes(searchField.toLowerCase());
+    const { searchField, onSearchChange, monsters, isPending } = this.props;
+    const filteredMonsters = monsters.filter((monster) => {
+      return monster.name.toLowerCase().includes(searchField.toLowerCase());
     });
 
-    if (!friends.length) {
-      return <h1 className="tc">Loading</h1>;
-    } else {
-      return (
-        <div className="tc">
-          <h1 className="f2">MonstaFriends</h1>
-          <SearchBox searchChange={onSearchChange} />
-          <Scroll>
-            <ErrorBoundry>
-              <CardList friends={filteredFriends} />
-            </ErrorBoundry>
-          </Scroll>
-        </div>
-      );
-    }
+    return isPending ? (
+      <h1 className="tc">Loading</h1>
+    ) : (
+      <div className="tc">
+        <h1 className="f2">MonstaFriends</h1>
+        <SearchBox searchChange={onSearchChange} />
+        <Scroll>
+          <ErrorBoundry>
+            <CardList friends={filteredMonsters} />
+          </ErrorBoundry>
+        </Scroll>
+      </div>
+    );
   }
 }
 
