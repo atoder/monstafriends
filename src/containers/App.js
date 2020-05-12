@@ -1,19 +1,29 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 import CardList from "../components/CardList";
 import SearchBox from "../components/SearchBox";
 import Scroll from "../components/Scroll";
 import ErrorBoundry from "../components/ErrorBoundry";
 import "./App.css";
+import { setSearchField } from "../actions";
+
+const mapStateToProps = (state) => {
+  return {
+    searchField: state.searchField,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onSearchChange: (event) => dispatch(setSearchField(event.target.value)),
+  };
+};
 
 class App extends Component {
   constructor() {
     super();
-    this.state = { friends: [], searchField: "" };
+    this.state = { friends: [] };
   }
-
-  onSearchChange = (event) => {
-    this.setState({ searchField: event.target.value });
-  };
 
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -22,7 +32,8 @@ class App extends Component {
   }
 
   render() {
-    const { friends, searchField } = this.state;
+    const { friends } = this.state;
+    const { searchField, onSearchChange } = this.props;
     const filteredFriends = friends.filter((friend) => {
       return friend.name.toLowerCase().includes(searchField.toLowerCase());
     });
@@ -33,7 +44,7 @@ class App extends Component {
       return (
         <div className="tc">
           <h1 className="f2">MonstaFriends</h1>
-          <SearchBox searchChange={this.onSearchChange} />
+          <SearchBox searchChange={onSearchChange} />
           <Scroll>
             <ErrorBoundry>
               <CardList friends={filteredFriends} />
@@ -45,4 +56,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
