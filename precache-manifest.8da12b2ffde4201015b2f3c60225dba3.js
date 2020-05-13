@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f149a17493405f04e7a4bff364578a36",
+    "revision": "98b5583d5284e48c6981001f520b6188",
     "url": "/monstafriends/index.html"
   },
   {
-    "revision": "ed8f223ec55fc2a10f91",
+    "revision": "9ac774fed5b97e11c00c",
     "url": "/monstafriends/static/css/2.036b41f9.chunk.css"
   },
   {
-    "revision": "090848e5efd73047828c",
+    "revision": "7da95b227e07d858bd0c",
     "url": "/monstafriends/static/css/main.17f0e2de.chunk.css"
   },
   {
-    "revision": "ed8f223ec55fc2a10f91",
-    "url": "/monstafriends/static/js/2.6fb3a735.chunk.js"
+    "revision": "9ac774fed5b97e11c00c",
+    "url": "/monstafriends/static/js/2.415af470.chunk.js"
   },
   {
-    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/monstafriends/static/js/2.6fb3a735.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/monstafriends/static/js/2.415af470.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "090848e5efd73047828c",
-    "url": "/monstafriends/static/js/main.90f929d7.chunk.js"
+    "revision": "7da95b227e07d858bd0c",
+    "url": "/monstafriends/static/js/main.0d6bc75c.chunk.js"
   },
   {
     "revision": "3fcdedf34bc26e069db2",
